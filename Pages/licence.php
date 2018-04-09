@@ -10,7 +10,8 @@
 
 <!-- Custom styles -->
 <head>
-<link href="../css/sb-admin.css" rel="stylesheet">
+<!-- Custom styles -->
+<link href="../css/custom.css" rel="stylesheet">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -21,6 +22,12 @@
       <p>Here you will find all your SIA licence details.
         <br/>If your licence is due to expire in under two months please renew your licence as soon as possible. Visit the <a href="https://www.sia.homeoffice.gov.uk/Pages/licensing-renewals.aspx">SIA Licensing Website.</a></p>
     <!-- /.container-fluid-->
+
+
+    <div id="wrapper">
+
+
+          <div id="page-wrapper">
 
                 <div class="row">
                     <div class="col-lg-12">
@@ -53,6 +60,24 @@
                                     </tbody>
                                   </table>
                                   <!-- /.table-responsive -->
+                                </div>
+                                                        <!-- /.panel-body -->
+                                                    </div>
+                                                    <!-- /.panel -->
+                                                </div>
+                                                <!-- /.col-lg-12 -->
+                                            </div>
+
+
+
+                                        </div>
+                                        <!-- /#page-wrapper -->
+
+                                    </div>
+                                    <!-- /#wrapper -->
+
+
+
 
 
     <!-- DataTables JavaScript -->

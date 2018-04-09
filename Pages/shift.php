@@ -17,6 +17,8 @@
     </br/></p>
     <!-- /.container-fluid-->
 
+<div id="wrapper">
+
 <div id="page-wrapper">
                 <div class="row">
                     <div class="col-lg-12">
@@ -39,7 +41,7 @@
                                           <th>Start</th>
                                           <th>Finish</th>
                                           <th>Site Name</th>
-                                          <th>Shift Hours</th>
+                                          <th>Hours</th>
                                           <th>Hourly Payrate</th>
                                           <th>Confirmation</th>
                                           <th>Address</th>
@@ -99,7 +101,7 @@
                                             <th>Start</th>
                                             <th>Finish</th>
                                             <th>Site Name</th>
-                                            <th>Shift Hours</th>
+                                            <th>Hours</th>
                                             <th>Hourly Payrate</th>
                                             <th>Address</th>
                                             <th>City</th>
@@ -134,6 +136,10 @@
                     <!-- /.col-lg-12 -->
                 </div>
 </div>
+
+</div>
+  <!-- /#wrapper -->
+
 
     <!-- Logout Modal-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
