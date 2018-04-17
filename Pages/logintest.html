@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Login">
+  <meta name="author" content="Allied Facilities">
+  <title>AF Staff Portal Login</title>
+  <!-- Bootstrap core CSS-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="../css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="page-top">
+    <a class="navbar-brand" href="index.html">Allied Facilities Staff Portal</a>
+  </div>
+  <div class="container">
+    <div class="card card-login mx-auto mt-5">
+      <div class="card-header"><strong>Login</strong></div>
+      <div class="card-body">
+
+
+
+
+            <form name"login" action="shift.php" >
+            <input class="form-control" type="text" id:"user" required>
+            <input class="form-control" type="password" id:"pwd" required>
+          <input type="button" id="submit" onclick="check()">Login</a>
+        </form>
+
+  <script>
+
+        var people = [
+          {
+            username: "lauren",
+            password: "dog"
+          },
+          {
+            username: "matt",
+            password: "cat"
+          }
+        ]
+                             function check() { /*function to check userid & password*/
+                                  /*the following code checkes whether the entered userid and password are matching*/
+                                  var us = document.getElementById("login.user").value
+                                  var passw = document.getElementById("login.pwd").value
+                          //        var username = document.getElementById("user").value
+                        //          var password = document.getElementById("pwd").value
+
+                            for(i = 0; i < people.length; i++){
+                              if(us == people[i].username && passw == people[i].password)
+                              {
+                                 window.open("shift.php");
+                                 return false;/*opens the target page while Id & password matches*/
+                              }
+                              else {
+                                    alert("Error Password or Username");/*displays error message*/
+                              }
+  }
+}
+
+
+
+                              //    if(form.username.value == "123" && form.password.value == "pass1234")
+                              //    {
+                              //        window.open("shift.php");/*opens the target page while Id & password matches*/
+                            //      }
+                            //      else {
+                            //          alert("Error Password or Username");/*displays error message*/
+                            //      }
+</script>
+
+  </div>
+
+          <div class="text-center">
+          <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  <!-- Bootstrap core JavaScript-->
+                          <script src="../vendor/jquery/jquery.min.js"></script>
+                          <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                          <!-- Core plugin JavaScript-->
+                          <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+</body>
+
+</html>

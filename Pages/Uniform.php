@@ -15,18 +15,19 @@
       <p>Here you will find all your currently loaned items and uniform.</p>
     <!-- /.container-fluid-->
 
-    <div id="page-wrapper">
 
-                    <div class="col-lg-12">
-                    </div>
-                    <!-- /.col-lg-12 -->
+    <div id="wrapper">
 
-                <!-- /.row -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="panel panel-default">
-
-                            <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                        </div>
+                        <!-- /.col-lg-12 -->
+                      </div>
+                                    <!-- /.row -->
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="panel panel-default">
+                                              <div class="panel-body">
                                 <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
@@ -59,7 +60,7 @@
                       </div>
                       <!-- /.col-lg-12 -->
                   </div>
-  </div>
+
 
     <!-- DataTables JavaScript -->
   <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>

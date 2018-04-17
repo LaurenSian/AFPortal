@@ -41,12 +41,12 @@
                     <div class="col-lg-12">
                         <div class="panel panel-default">
                             <!-- /.panel-heading -->
-
-
                             <div class="panel-body">
                                 <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-currentshift">
                                     <thead>
                                         <tr>
+                                          <th>shift id
+                                          </th>
                                           <th>Start Date</th>
                                           <th>Start</th>
                                           <th>Finish</th>
@@ -65,9 +65,8 @@
                                     <tbody>
                                         <?php
                                         while ($row = mysqli_fetch_array($queryshiftcurrent))
-                                        { $employeeid = mysqli_fetch_array('e.Employee_ID');
-                                          $shiftid = 'Assignment.Shift_ID';
-                                          echo '<tr class="gradeX">
+                                        {  echo '<tr class="gradeX">
+                                          <td>'.$row['Shift_ID'].'</td>
                                           <td>'.$row['Shift_StartDate'].'</td>
                                           <td>'.$row['Shift_StartTime'].'</td>
                                           <td>'.$row['Shift_EndTime'].'</td>
@@ -84,9 +83,9 @@
                                            <option value="rejected">Rejected</option>
                                            <option value="pending" selected>Pending</option>
                                         </select>
-                                        <input type="submit" name="Update" value="Update">
+                                        <input type="submit" name="Update" id="Update" value="Update">
                                         </form></td>
-                                        </tr>';  echo $employeeid;
+                                        </tr>';
                                   }?>
 
                                     </tbody>
@@ -101,23 +100,18 @@
                 </div>
 
                 <?php
-
                      if(isset($_POST['Update'])){
 
-                       // get form data, making sure it is valid
-                      //   $empid = $_POST['Employee.Employee_ID'];
                        $confirmvalue = $_POST['confirmation'];
-                   //    $employeeid = "AF002";
-                  //   $shiftid = 9;
 
-                       // mysql query to update data
-                      $sqlsubmit = "UPDATE Assignment SET Assignment_Confirmed = '$confirmvalue' WHERE Employee_ID = '$employeeid' AND Shift_ID = '$shiftid'";
+                      // mysql query to update data
+                      $sqlsubmit = "UPDATE Assignment SET Assignment_Confirmed = '$confirmvalue' WHERE Employee_ID = 'AF002' AND Shift_ID = 9";
 
                       $querysubmit = mysqli_query($conn, $sqlsubmit);
 
                         if (!$querysubmit) {
                        die ('SQL Error: ' . mysqli_error($conn));
-                       }}
+                     }}
                 ?>
 </body>
 

@@ -2,3 +2,13 @@
   display: flex;
   float: right;
 }
+
+div.dataTables_wrapper div.dataTables_filter input {
+  margin-left: 0.5em;
+  display: block;
+  width: auto;
+}
+
+.form-control {
+display: block;
+}

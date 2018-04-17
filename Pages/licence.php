@@ -24,22 +24,25 @@
     <!-- /.container-fluid-->
 
 
+
     <div id="wrapper">
 
-
-          <div id="page-wrapper">
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="panel panel-default">
-                            <!-- /.panel-heading -->
-
-                      <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                        </div>
+                        <!-- /.col-lg-12 -->
+                      </div>
+                                    <!-- /.row -->
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="panel panel-default">
+                                              <div class="panel-body">
                                 <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
+                                            <th>Date of Issue</th>
                                             <th>Licence Number</th>
-                                            <th>Licence Type</th>
+                                            <th>Type</th>
                                             <th>Expiry Date</th>
                                             <th>Renew Licence?</th>
                                         </tr>
@@ -49,16 +52,23 @@
                                       while ($row = mysqli_fetch_array($querylicence))
                                         {
                                           echo '<tr class="gradeA">
+                                          <td>'.$row['Licence_IssueDate'].'</td>
                                           <td>'.$row['Licence_No'].'</td>
                                           <td>'.$row['Licence_Type'].'</td>
-                                          <td>'.$row['Licence_Expiry'].'</td>
+                                          <td>'.$row['Expiry'].'</td>
                                           <td>'.$row['Renew_Licence'].'</td>
                                           </tr>';
                                   }?>
 
                                         </tr>
+  <div>
                                     </tbody>
-                                  </table>
+
+
+                                    </div>
+                                    </table>
+
+                                    </div>
                                   <!-- /.table-responsive -->
                                 </div>
                                                         <!-- /.panel-body -->
@@ -69,21 +79,11 @@
                                             </div>
 
 
-
-                                        </div>
-                                        <!-- /#page-wrapper -->
-
-                                    </div>
-                                    <!-- /#wrapper -->
-
-
-
-
-
     <!-- DataTables JavaScript -->
   <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
   <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
   <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
 
     <script>
 $(document).ready(function() {
